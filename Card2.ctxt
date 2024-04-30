@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Card2
+comment1.params=
+comment1.target=Card2()
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=void\ randomSelect()
+comment4.params=
+comment4.target=int\ getJ()
+comment5.params=
+comment5.target=int\ extractJValue()
+comment6.params=
+comment6.target=java.util.Queue\ getJQueue()
+numComments=7
