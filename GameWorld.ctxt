@@ -2,12 +2,17 @@
 comment0.target=GameWorld
 comment1.params=
 comment1.target=GameWorld()
+comment1.text=\r\n\ Adds\ all\ the\ card\ and\ deck\ objects\ to\ the\ world\r\n
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ Codes\ for\ the\ playing\ of\ the\ game.\r\n\ First\ sets\ a\ timer\ where\ the\ player\ can't\ select\ a\ card\r\n\ After\ timer\ is\ done,\ player\ can\ press\ enter\ to\ select\ a\ new\ card\r\n\ Updates\ the\ score\ and\ text\ after\ comparing\ the\ player\ and\ AI\ cards\r\n
 comment3.params=
 comment3.target=void\ shuffleCard()
+comment3.text=\r\n\ Randomly\ selects\ card\ for\ the\ player\r\n
 comment4.params=
 comment4.target=void\ shuffleCard2()
+comment4.text=\r\n\ Randomly\ selects\ card\ for\ the\ AI\ opponent\r\n
 comment5.params=
 comment5.target=void\ updateScore()
+comment5.text=\r\n\ updates\ the\ score\ every\ turn,\ and\ decides\ what\ happens\ when\ the\ user\ wins\ or\ loses\r\n
 numComments=6

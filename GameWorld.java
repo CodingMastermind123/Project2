@@ -12,6 +12,10 @@ public class GameWorld extends World
     private boolean timerExpired;
     int score1 = 0;
     int score2 = 0;
+    
+    /**
+     * Adds all the card and deck objects to the world
+     */
     public GameWorld()
     {
         card = new Card();
@@ -29,6 +33,12 @@ public class GameWorld extends World
 
     }
 
+    /**
+     * Codes for the playing of the game.
+     * First sets a timer where the player can't select a card
+     * After timer is done, player can press enter to select a new card
+     * Updates the score and text after comparing the player and AI cards
+     */
     public void act() 
     {
 
@@ -82,7 +92,9 @@ public class GameWorld extends World
        
     }
 
-    // This method is for the player
+    /**
+     * Randomly selects card for the player
+     */
     public void shuffleCard()
     {
         // calls randomSelect method to randomly select a queue from card class
@@ -96,7 +108,9 @@ public class GameWorld extends World
 
     }
 
-    // this method is for the AI opponent
+    /**
+     * Randomly selects card for the AI opponent
+     */
     public void shuffleCard2()
     {
         // calls randomSelect for card2 class
@@ -110,7 +124,9 @@ public class GameWorld extends World
 
     }
 
-    // updates the score every turn, and decides what happens when the user wins or loses
+    /**
+     * updates the score every turn, and decides what happens when the user wins or loses
+     */
     public void updateScore()
     {
         removeText(10, 30);

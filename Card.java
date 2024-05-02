@@ -22,9 +22,11 @@ public class Card extends Actor
     boolean isTrue = false;
     public int score;
     MayflowerImage king;
+    /**
+     * Creates a queue for each card type and adds all the images of that card type into each queue
+     */
     public Card()
     {
-        // Creates a queue for each card type and adds all the images of that card type into each queue
         for(i = 2; i < 10; i++)
         {
             clubs.add("Cards/Clubs " + i + ".png");
@@ -66,6 +68,10 @@ public class Card extends Actor
         setImage(king);
 
     }
+    
+    /**
+     * Displays a new card every time the user presses enter
+     */
     public void act()
     {
 
@@ -86,12 +92,18 @@ public class Card extends Actor
 
     }
 
+    /**
+     * Returns i value
+     */
     public int getI()
     {
         // returns i value
         return i;
     }
 
+    /**
+     * Generates a random number from 1 - 8, selects a queue based on the number generated
+     */
     public void randomSelect()
     {
         // randomly generates an integer from 1-8
@@ -131,6 +143,9 @@ public class Card extends Actor
         }
     }
 
+    /**
+     * Reorders all the elements inside the selected queue
+     */
     public void shuffle(Queue queue)
     {
         // adds all the items from the parameter queue into a LinkedList
@@ -148,6 +163,9 @@ public class Card extends Actor
 
     }
 
+    /**
+     * Determines the i value inside ann element of the queue and returns it
+     */
     public int extractIValue() {
         int startIndex = -1; // Initialize the start index of the number
         int endIndex = -1; // Initialize the end index of the number
@@ -212,6 +230,9 @@ public class Card extends Actor
         return Integer.parseInt(iValueString);
     }
 
+    /**
+     * returns the selected queue
+     */
     public Queue getIQueue()
     {
         // returns the selected queue

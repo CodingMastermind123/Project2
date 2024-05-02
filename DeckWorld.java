@@ -10,6 +10,9 @@ public class DeckWorld extends World
         showText("Press Space to Begin the Game!", getWidth() / 2 - 220, getHeight() / 2 - 200, Color.WHITE);
     }
 
+    /**
+     * Changes world when user presses space
+     */
     public void act()
     {
         // changes world when user presses space

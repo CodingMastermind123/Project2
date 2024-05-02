@@ -4,4 +4,5 @@ comment1.params=
 comment1.target=DeckWorld()
 comment2.params=
 comment2.target=void\ act()
+comment2.text=\r\n\ Changes\ world\ when\ user\ presses\ space\r\n
 numComments=3

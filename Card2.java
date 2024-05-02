@@ -20,6 +20,10 @@ public class Card2 extends Card
     int value;
     public int score;
     MayflowerImage king;
+    
+    /**
+     * Creates a queue for each card type and adds all the images of that card type into each queue
+     */
     public Card2()
     {
         for(j = 2; j < 10; j++)
@@ -62,6 +66,11 @@ public class Card2 extends Card
         setImage(king);
 
     }
+    
+    
+    /**
+     * Displays a new card every time the user presses enter
+     */
     public void act()
     {
         // makes sure queue isnt empty
@@ -81,7 +90,9 @@ public class Card2 extends Card
 
     }
 
-    // same as randomSelect method from card class
+    /**
+     * Same as randomSelect method from Card class
+     */
     public void randomSelect()
     {
         int random = (int)(Math.random() * 8) + 1;
@@ -119,13 +130,18 @@ public class Card2 extends Card
         }
     }
 
+    /**
+     * Returns j value
+     */
     public int getJ()
     {
         // returns j value
         return j;
     }
 
-    // same as extractIValue from Card class, but extracts j value
+    /**
+     * same as extractIValue from Card class, but extracts j value
+     */
     public int extractJValue() {
         int startIndex = -1; 
         int endIndex = -1; 
@@ -186,6 +202,9 @@ public class Card2 extends Card
         return Integer.parseInt(jValueString);
     }
 
+    /**
+     * returns selected queue
+     */
     public Queue getJQueue()
     {
         return selected;

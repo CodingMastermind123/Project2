@@ -9,6 +9,9 @@ public class Map extends World {
         showText("Welcome to War! Press Enter to Start!", getWidth() / 2 - 300, getHeight() / 2, Color.WHITE);
     }
 
+    /**
+     * Changes world to deckWorld when user presses enter
+     */
     public void act() {
         if(gameStarted == false){
 
